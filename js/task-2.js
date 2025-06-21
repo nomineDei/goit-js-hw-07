@@ -38,13 +38,12 @@ function createGallery(arr) {
 
 galleryList.style.display = "flex"; 
 galleryList.style.flexWrap = "wrap";
-galleryList.style.gap = "25px";
-
+galleryList.style.gap = "24px";
 
 galleryList.insertAdjacentHTML("beforeend", createGallery(images));
 
 const galleryItem = document.querySelectorAll(".gallery-item");
 
 galleryItem.forEach(item => {
-  item.style.flexBasis = "calc((100% - 50px) / 3)";
+  item.style.flexBasis = "calc((100% - 48px) / 3)";
 });
